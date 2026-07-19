@@ -1,14 +1,14 @@
 /* NAV */
 body{
     overflow-x: hidden;
-    height: 4400px;
-        background: linear-gradient(
+    height: max-content;
+background: linear-gradient(
     to left,
     #B4B1A0 0%,
-    #B4B1A0 40%,
-    #D6D3C8 80%,
-    #ffffff 100%
-); 
+    #BFC0B0 35%,
+    #C9C8BC 65%,
+    #D6D3C8 100%
+);
 
 }
 
@@ -94,8 +94,8 @@ transform: translate(0px,15px);
     display: flex;
     justify-content: space-between;
     width: 10%;
-    transform: translatey(70%);
-    right: 50px ;
+    right: 50px;
+    transform: translateY(50%);
     
 }
 .nav .nav-items .func li{
@@ -287,9 +287,6 @@ header #lio-carousel .prev {
 /* latest */
 .latest {
     margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
     height: 1400px;
 }
 .latest .product{
@@ -298,21 +295,27 @@ header #lio-carousel .prev {
     justify-content: space-around;
     height: 1300px;
 }
+
 .latest .title{
-margin: auto; 
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    position: relative;
+    text-align: center;
+    margin-bottom:30px ;
+    transform: translateX(-40%);
 }
 .latest .title img{
     width: 250px;
     display: inline-block;
-    left: 50%;
     position: relative;
-    transform: translateX(-50%);
 }
 .latest .title h2{
     z-index: 2;
     display: inline-block;
     position: relative;
-    transform: translate(-55%,40%);
+    transform: translate(-105%,40%);
+
 
 }
 .latest .item{
